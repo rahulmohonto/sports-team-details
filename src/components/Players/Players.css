@@ -1,0 +1,54 @@
+.body{
+    background-color:palevioletred;
+    text-align:center;
+}
+.information-container{
+    display:flex;
+    margin:10px;
+    border:2px solid thistle;
+    border-radius:10px;
+    width:1200px;
+    padding:10px 30px;
+    height:500px;
+   
+}
+.name-container{
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top:20px;
+    margin-right:400px;
+    background-color:dodgerblue;
+    border-radius: 8px;
+    width:500px;
+    color:rgb(39, 33, 36);
+}
+.image-container{
+    background-color:deepskyblue;
+    border-radius:10px;
+    width:400px;
+}
+.image-container img{
+    width:95%;
+    padding:100px 10px;
+    height:300px;
+}
+.hireButton{
+   text-align:left;
+   margin-top:180px;
+}
+.hireButton button{
+    background-color:rgb(95, 144, 145);
+    border-radius:5px;
+    color:springgreen;
+    font-size: 1.2rem;
+    padding:7px 15px;
+}
+.hireButton button:hover{
+    background-color:rebeccapurple;
+}
+.icon{
+    height:8px;
+    width:8px;
+    margin-right: 8px;
+}
