@@ -1,7 +1,7 @@
 import React from 'react';
 import './AddedPlayer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faFunnelDollar } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faFunnelDollar, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 
 const AddedPlayer = (props) => {
@@ -20,7 +20,7 @@ const AddedPlayer = (props) => {
             <div className="name-salary-container">
                 <h4>  <span className="icon"><FontAwesomeIcon icon={faUser} /></span> Added Player : {selectedPlayer.length}, {props.Salary}</h4>
 
-                <h5> <span className="icon"><FontAwesomeIcon icon={faFunnelDollar} /></span> Total Salary Required : {TotalSalary}</h5>
+                <h5> <span className="icon"><FontAwesomeIcon icon={faFunnelDollar} /></span> Total Salary Required : <span className="icon"><FontAwesomeIcon icon={faDollarSign} /></span>{TotalSalary}</h5>
             </div>
             <div className="added-name-container mb-6">
                 <li>{hiredPlayerName}</li>
