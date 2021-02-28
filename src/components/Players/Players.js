@@ -3,14 +3,15 @@ import './Players.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faUser, faGlobe, faFlag, faDollarSign } from '@fortawesome/free-solid-svg-icons'
 
+
 const Players = (props) => {
     // console.log(props)
     const { name, image, email, country, state, postCode, Role, Salary } = props.playerEle;
     const handleAddPlayer = props.handleAddedPlayer
     return (
-        <body className="body-container">
+        <body className="body-container mt-5 rounded">
             <div className="information-container">
-                <div className="name-container">
+                <div className="name-container pt-5 text-warning">
                     <h4> <span className="icon"><FontAwesomeIcon icon={faUser} /></span> Name : {name}</h4>
                     <h5><span className="icon"><FontAwesomeIcon icon={faEnvelope} /></span>Mail : {email}</h5>
                     <h5>Role : {Role}</h5>
@@ -25,7 +26,7 @@ const Players = (props) => {
                     <button onClick={() => handleAddPlayer(props.playerEle)} id="but" >Select</button>
                 </div>
                 <div className="image-container">
-                    <img src={image}></img>
+                    <img className="text-center" src={image} alt=""></img>
 
                 </div>
             </div>

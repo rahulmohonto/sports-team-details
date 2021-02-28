@@ -1,9 +1,11 @@
 .body{
-    background-color:palevioletred;
+    background-color:rgb(209, 85, 126);
     text-align:center;
 }
 .information-container{
     display:flex;
+    background-color:rgb(209, 85, 126);
+
     margin:10px;
     border:2px solid thistle;
     border-radius:10px;
@@ -18,20 +20,23 @@
     padding-bottom: 10px;
     padding-top:20px;
     margin-right:400px;
-    background-color:dodgerblue;
+    background-color:rgb(95, 109, 122);
     border-radius: 8px;
     width:500px;
+   
     color:rgb(39, 33, 36);
 }
 .image-container{
-    background-color:deepskyblue;
+    background-color:rgb(59, 142, 170);
     border-radius:10px;
     width:400px;
+
 }
 .image-container img{
     width:95%;
     padding:100px 10px;
-    height:300px;
+    height:450px;
+    border-radius:10px;
 }
 .hireButton{
    text-align:left;
@@ -51,4 +56,5 @@
     height:8px;
     width:8px;
     margin-right: 8px;
+    
 }

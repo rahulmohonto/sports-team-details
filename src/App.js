@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import PlayerData from './components/Players-Data/Player-Data.json';
 import Players from './components/Players/Players.js';
 import AddedPlayer from './components/AddedPlayer/AddedPlayer.js';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -20,18 +21,16 @@ function App() {
   const handleAddPlayer = (player) => {
     const newPlayer = [...addedPlayer, player]
     setAddedPlayer(newPlayer);
-    const getsome = document.getElementById('but')
-    getsome.innerText = 'Hired';
   }
 
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={headerlogo}></img>
-        <h4> Available Players : {PlayerData.length}</h4>
-        <h5>Player Selected : {addedPlayer.length}</h5>
-        <AddedPlayer selectedPlayer={addedPlayer}></AddedPlayer>
+        <img src={headerlogo} alt=""></img>
+        <h4 className="text-warning mt-3"> Available Players : {PlayerData.length}</h4>
+        <h5 className="text-warning">Player Selected : {addedPlayer.length}</h5>
+        <AddedPlayer className="mb-6" selectedPlayer={addedPlayer}></AddedPlayer>
         {
           player.map(player =>
             <Players playerEle={player} handleAddedPlayer={handleAddPlayer}></Players>)

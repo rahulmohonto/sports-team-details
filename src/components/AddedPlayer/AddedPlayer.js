@@ -6,6 +6,7 @@ import { faUser, faFunnelDollar } from '@fortawesome/free-solid-svg-icons'
 
 const AddedPlayer = (props) => {
     const selectedPlayer = props.selectedPlayer
+    console.log(selectedPlayer)
 
     let hiredPlayerName = []
     let TotalSalary = 0;
@@ -15,12 +16,13 @@ const AddedPlayer = (props) => {
         TotalSalary = TotalSalary + element.Salary
     }
     return (
-        <div className="addedplayer">
+        <div className="addedplayer mt-5">
             <div className="name-salary-container">
-                <h4>  <span className="icon"><FontAwesomeIcon icon={faUser} /></span> Added Player : {selectedPlayer.length}</h4>
+                <h4>  <span className="icon"><FontAwesomeIcon icon={faUser} /></span> Added Player : {selectedPlayer.length}, {props.Salary}</h4>
+
                 <h5> <span className="icon"><FontAwesomeIcon icon={faFunnelDollar} /></span> Total Salary Required : {TotalSalary}</h5>
             </div>
-            <div className="added-name-container">
+            <div className="added-name-container mb-6">
                 <li>{hiredPlayerName}</li>
             </div>
 
