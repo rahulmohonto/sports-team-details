@@ -18,12 +18,17 @@ const AddedPlayer = (props) => {
     return (
         <div className="addedplayer mt-5">
             <div className="name-salary-container">
-                <h4>  <span className="icon"><FontAwesomeIcon icon={faUser} /></span> Added Player : {selectedPlayer.length}, {props.Salary}</h4>
+                <h4>  <span className="icon"><FontAwesomeIcon icon={faUser} /></span> Added Player : {selectedPlayer.length}, {selectedPlayer.Salary}</h4>
 
                 <h5> <span className="icon"><FontAwesomeIcon icon={faFunnelDollar} /></span> Total Salary Required : <span className="icon"><FontAwesomeIcon icon={faDollarSign} /></span>{TotalSalary}</h5>
             </div>
             <div className="added-name-container mb-6">
-                <li>{hiredPlayerName}</li>
+                <div>
+                    <ul>
+                        &nbsp; <li>{hiredPlayerName}</li>
+
+                    </ul>
+                </div>
             </div>
 
         </div>
