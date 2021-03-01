@@ -25,7 +25,7 @@ const AddedPlayer = (props) => {
             <div className="added-name-container mb-6">
                 <div>
                     <ul>
-                        &nbsp; <li>{hiredPlayerName}</li>
+                        <li>{hiredPlayerName}</li>
 
                     </ul>
                 </div>
